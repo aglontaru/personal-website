@@ -1,0 +1,26 @@
+# ---- Build Stage ----
+FROM node:18-alpine AS builder
+
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm ci
+
+COPY . .
+RUN npm run build
+
+# ---- Runtime Stage ----
+FROM nginx:alpine
+
+# Remove default nginx static assets
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copy the static export from builder
+COPY --from=builder /app/out /usr/share/nginx/html
+
+# Copy our custom nginx config
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Expose port 8080 (Cloud Run default)
+EXPOSE 8080
+
+CMD ["nginx", "-g", "daemon off;"]
