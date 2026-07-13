@@ -1170,6 +1170,29 @@ img { max-width: 100%; display: block; }
   text-shadow: 0 0 10px rgba(212,228,250,0.2);
 }
 
+.logo-img {
+  height: 48px;
+  width: auto;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  object-fit: contain;
+}
+
+.logo-fix-png {
+  /* For transparent PNGs that are black: make them white */
+  filter: brightness(0) invert(1);
+}
+
+.logo-fix-bg {
+  /* For white-background images: invert to black background, then screen */
+  filter: grayscale(100%) invert(1) brightness(10);
+  mix-blend-mode: screen;
+}
+
+.logo-img:hover {
+  opacity: 1;
+}
+
 /* ---------- Skill Module ---------- */
 .skill-module {
   border: 1px solid rgba(36,50,84,0.8);
