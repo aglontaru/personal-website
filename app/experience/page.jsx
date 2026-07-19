@@ -33,28 +33,11 @@ export default function Experience() {
           </div>
         </div>
       </section>
-      {/* ============ LOGO STRIP ============ */}
-      <section style={{ padding: '64px 0', borderTop: '1px dashed rgba(36,50,84,0.5)', background: 'rgba(7,16,35,0.4)' }}>
-        <div className="container">
-          <div style={{ fontFamily: '"IBM Plex Mono",monospace', fontSize: 12, letterSpacing: '.18em', textTransform: 'uppercase', color: '#5f6c8c', textAlign: 'center', marginBottom: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12 }}>
-            <span style={{ height: 1, width: 40, background: 'rgba(95,108,140,0.3)' }} />VERIFIED ENTITIES<span style={{ height: 1, width: 40, background: 'rgba(95,108,140,0.3)' }} />
-          </div>
-          <div className="logo-strip" style={{ marginBottom: 64 }}>
-            <img src="/logos/sapiema.png" alt="Sapiema" title="Sapiema" className="logo-img logo-fix-png" />
-            <img src="/logos/fi.png" alt="Founder Institute" title="Founder Institute" className="logo-img logo-fix-png" />
-            <img src="/logos/twitter-x.png" alt="X / Twitter" title="X / Twitter" className="logo-img logo-fix-png" />
-            <img src="/logos/amazon.png" alt="Amazon" title="Amazon" className="logo-img logo-fix-png" />
-            <img src="/logos/google.png" alt="Google" title="Google" className="logo-img logo-fix-png" />
-            <img src="/logos/sporttotal.png" alt="Sporttotal" title="Sporttotal" className="logo-img logo-fix-png" />
-            <img src="/logos/crossengage.png" alt="CrossEngage" title="CrossEngage" className="logo-img logo-fix-png" />
-            <img src="/logos/sorcova_health.png" alt="Sorcova Health" title="Sorcova Health" className="logo-img logo-fix-png" />
-          </div>
-        </div>
-      </section>
+
       {/* ============ CASE FILES ============ */}
       <section id="dossier" style={{ padding: '100px 0', borderTop: '1px dashed rgba(36,50,84,0.5)' }}>
         <div className="container">
-          <div className="section-label">System Logs — Professional Record</div>
+          <div className="section-label">Professional Record</div>
           <h2 className="section-title">Every role, audited like a pilot:<br />situation, execution, evidence.</h2>
           {/* SAPIEMA */}
           <div className="case-file" style={{ marginTop: 56 }}>
@@ -301,8 +284,8 @@ export default function Experience() {
               <h3 className="edu-card-title">Education</h3>
               <ul>
                 <li className="edu-item"><b className="edu-item-title">BSc, Computer Science</b><span className="edu-item-detail">Jacobs University Bremen · 2015–2018</span></li>
-                <li className="edu-item"><b className="edu-item-title">National High School of Computer Science "Tudor Vianu"</b><span className="edu-item-detail">Bucharest · 2011–2015</span></li>
                 <li className="edu-item" style={{ borderBottom: 'none' }}><b className="edu-item-title">Teaching Assistant</b><span className="edu-item-detail">Computer Networks · Data Visualization · C Lab — Jacobs University, 2017–2018</span></li>
+                <li className="edu-item"><b className="edu-item-title">National High School of Computer Science "Tudor Vianu"</b><span className="edu-item-detail">Bucharest · 2011–2015</span></li>
               </ul>
             </div>
             <div className="edu-card">
@@ -393,9 +376,11 @@ export default function Experience() {
         <div className="container">
           <h2 style={{ textAlign: 'center', fontSize: 'clamp(32px,4.6vw,54px)', fontWeight: 700, letterSpacing: '-.02em', lineHeight: '1.12', maxWidth: 880, margin: '0 auto 20px' }}>This is the experience behind<br />the Anti-Failure Engine.</h2>
           <p style={{ textAlign: 'center', color: '#9aa5bd', maxWidth: 640, margin: '0 auto 40px', fontSize: 17 }}>Every framework in the AI Integration Workshop — the PRIME Filter, the CTO Veto, the pre-mortems — was paid for in production incidents, failed pivots, and systems that had to keep running. That's the point.</p>
-          <a className="nav-btn-exp cta-workshop-btn" href="index.html#workshop">See the Workshop It Built →</a>
-          <div style={{ marginTop: 48, fontFamily: '"IBM Plex Mono",monospace', fontSize: 14, color: '#9aa5bd', display: 'flex', justifyContent: 'center', gap: '14px 40px', flexWrap: 'wrap' }}>
-            <span>✉ <a data-email="alex|sapiema.com" style={{ color: '#d4e4fa', textDecoration: 'none', borderBottom: '1px dashed #243254', paddingBottom: 2 }}>loading...</a></span>
+          <a href="https://calendar.app.google/DvDV5wZNfq7xbDoM7" className="btn-primary" target="_blank" rel="noopener noreferrer"><span>Schedule Your 30-Minutes Call →</span></a>
+          <div className="cta-contact">
+            <span>✉ <a href="mailto:alex@sapiema.com" style={{ color: '#fafbf7', textDecoration: 'none', borderBottom: '1px dashed #243254', paddingBottom: 2, transition: '0.2s' }}>alex@sapiema.com</a></span>
+            <span>☏ <a href="tel:+4917676503499" style={{ color: '#fafbf7', textDecoration: 'none', borderBottom: '1px dashed #243254', paddingBottom: 2, transition: '0.2s' }}>+49 176 76503499</a></span>
+            <span>in <a href="https://www.linkedin.com/in/aglontaru/" target="_blank" rel="noopener noreferrer" style={{ color: '#fafbf7', textDecoration: 'none', borderBottom: '1px dashed #243254', paddingBottom: 2, transition: '0.2s' }}>LinkedIn</a></span>
           </div>
         </div>
       </section>

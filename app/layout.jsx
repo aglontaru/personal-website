@@ -5,6 +5,7 @@ import './globals.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import CookieBanner from '../components/CookieBanner';
+import ScrollToTop from '../components/ScrollToTop';
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -62,6 +63,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <CookieBanner />
+        <ScrollToTop />
         <GoogleAnalytics gaId="G-PLACEHOLDER" />
         <Script src="/main.js" strategy="afterInteractive" />
       </body>

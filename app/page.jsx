@@ -1,72 +1,60 @@
 export default function Home() {
   return (
-    <main id="top" style={{ position: 'relative', zIndex: 1 }}>
+    <main id="home" style={{ position: 'relative', zIndex: 1 }}>
       {/* ================= HERO ================= */}
-      <section className="hero" style={{ padding: '120px 0 90px', position: 'relative', overflow: 'hidden', background: 'radial-gradient(ellipse at top right, rgba(20,35,70,0.4), transparent 50%)' }}>
-        <canvas id="neuralCanvas" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', opacity: '.55' }} />
-        <div className="sys-label">SYSTEM_LOG // 01_HERO</div>
-        <div className="container">
-          <div className="status-badge" style={{ marginBottom: 34 }}>
-            <span className="pulse-dot" />ALEXANDRU GLONTARU — AI ENGINEER · FRACTIONAL CTO · FOUNDER &amp; CEO, <b style={{ color: '#f66a2e', fontWeight: 600 }}>SAPIEMA</b>
+      <section className="hero" style={{ minHeight: 'calc(100vh - 67px)', display: 'flex', flexDirection: 'column', padding: 'clamp(10px, 2vh, 60px) 0', position: 'sticky', top: 0, zIndex: 0, background: '#050f24' }}>
+        <div style={{ position: 'absolute', top: '10%', left: '-10%', width: '50vw', height: '50vw', background: 'radial-gradient(circle, rgba(246,106,46,0.1) 0%, transparent 70%)', filter: 'blur(80px)', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', bottom: '-20%', right: '-10%', width: '60vw', height: '60vw', background: 'radial-gradient(circle, rgba(36,50,84,0.4) 0%, transparent 70%)', filter: 'blur(100px)', pointerEvents: 'none' }} />
+        <canvas id="neuralCanvas" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', opacity: '.4' }} />
+        {/* <div className="sys-label">SYSTEM_LOG // 01_HERO</div> */}
+        <div className="container" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: 'auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: 'clamp(10px, 2vh, 34px)' }}>
+            <div className="status-badge" style={{ padding: 'clamp(4px, 1vh, 7px) clamp(8px, 1.5vw, 14px)', fontSize: 'clamp(10px, 1.2vh, 12px)' }}>
+              <span className="pulse-dot" /><b style={{ color: '#f66a2e', fontWeight: 600 }}>ALEXANDRU GLONTARU</b> — AI ENGINEER · FRACTIONAL CTO · FOUNDER &amp; CEO, <b style={{ color: '#f66a2e', fontWeight: 600 }}>SAPIEMA</b>
+            </div>
           </div>
-          <h1 style={{ margin: '0 auto', textAlign: 'center', fontSize: 'clamp(42px,7vw,86px)', fontWeight: 700, lineHeight: '1.02', letterSpacing: '-0.03em', maxWidth: 980 }}>Stop <span style={{ color: '#5f6c8c', textDecoration: 'line-through 4px #ff5c5c' }}>Hallucinating</span> Your AI Strategy.<br /><span style={{ color: '#f66a2e' }}>Start Engineering It.</span></h1>
-          <div style={{ margin: '32px auto 44px', textAlign: 'center', maxWidth: 672, display: 'flex', flexDirection: 'column', gap: 24 }}>
-            <p style={{ fontSize: 'clamp(17px,2vw,20px)', color: '#9aa5bd', lineHeight: '1.6', margin: 0 }}>
-              <span style={{ color: '#f66a2e', fontFamily: '"IBM Plex Mono",monospace', fontSize: 14, letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: 4 }}>The Reality</span>
-              80% of corporate AI projects fail inside sandbox playgrounds.
-            </p>
-            <p style={{ fontSize: 'clamp(17px,2vw,20px)', color: '#9aa5bd', lineHeight: '1.6', margin: 0 }}>
-              <span style={{ color: '#f66a2e', fontFamily: '"IBM Plex Mono",monospace', fontSize: 14, letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: 4 }}>The Stance</span>
-              Zero hype. Just hard software physics enforced by a Fractional CTO.
-            </p>
-            <p style={{ fontSize: 'clamp(17px,2vw,20px)', color: '#9aa5bd', lineHeight: '1.6', margin: 0 }}>
-              <span style={{ color: '#f66a2e', fontFamily: '"IBM Plex Mono",monospace', fontSize: 14, letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: 4 }}>The 4-Hour Payoff</span>
-              A forensic workflow audit locking down 2–3 shippable, 90-day pilot charters.
-            </p>
+          <h1 style={{ margin: '0 auto', textAlign: 'center', fontSize: 'clamp(32px, min(6vw, 7vh), 86px)', fontWeight: 700, lineHeight: '1.02', letterSpacing: '-0.03em', maxWidth: 980 }}>Stop <span style={{ color: '#5f6c8c', textDecoration: 'line-through 4px #ff5c5c' }}>Hallucinating</span> Your AI Strategy.<br /><span style={{ color: '#f66a2e' }}>Start Engineering It.</span></h1>
+          <div style={{ margin: 'clamp(12px, 3vh, 36px) auto clamp(16px, 4vh, 48px)', textAlign: 'center', maxWidth: 1040, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 'clamp(12px, 2vh, 32px)' }}>
+            <div style={{ background: 'rgba(7,16,35,0.4)', border: '1px solid rgba(36,50,84,0.4)', borderRadius: 8, padding: 'clamp(12px, 2vh, 24px)', backdropFilter: 'blur(10px)' }}>
+              <p style={{ fontSize: 'clamp(12px,min(1.4vw, 1.6vh),17px)', color: '#9aa5bd', lineHeight: '1.5', margin: 0 }}>
+                <span style={{ color: '#f66a2e', fontFamily: '"IBM Plex Mono",monospace', fontSize: 'clamp(11px, 1.4vh, 13px)', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: 'clamp(4px, 1vh, 8px)' }}>The Reality</span>
+                80% of corporate AI projects fail inside sandbox playgrounds.
+              </p>
+            </div>
+            <div style={{ background: 'rgba(7,16,35,0.4)', border: '1px solid rgba(36,50,84,0.4)', borderRadius: 8, padding: 'clamp(12px, 2vh, 24px)', backdropFilter: 'blur(10px)' }}>
+              <p style={{ fontSize: 'clamp(12px,min(1.4vw, 1.6vh),17px)', color: '#9aa5bd', lineHeight: '1.5', margin: 0 }}>
+                <span style={{ color: '#f66a2e', fontFamily: '"IBM Plex Mono",monospace', fontSize: 'clamp(11px, 1.4vh, 13px)', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: 'clamp(4px, 1vh, 8px)' }}>The Stance</span>
+                Zero hype. Just hard software physics enforced by a Fractional CTO.
+              </p>
+            </div>
+            <div style={{ background: 'rgba(7,16,35,0.4)', border: '1px solid rgba(36,50,84,0.4)', borderRadius: 8, padding: 'clamp(12px, 2vh, 24px)', backdropFilter: 'blur(10px)' }}>
+              <p style={{ fontSize: 'clamp(12px,min(1.4vw, 1.6vh),17px)', color: '#9aa5bd', lineHeight: '1.5', margin: 0 }}>
+                <span style={{ color: '#f66a2e', fontFamily: '"IBM Plex Mono",monospace', fontSize: 'clamp(11px, 1.4vh, 13px)', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: 'clamp(4px, 1vh, 8px)' }}>The 4-Hour Payoff</span>
+                A forensic workflow audit locking down 2–3 shippable, 90-day pilot charters.
+              </p>
+            </div>
           </div>
-          <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', justifyContent: 'center', marginBottom: 64 }}>
-            <a href="#workshop" className="btn-primary hero-cta-primary"><span>Run the Reality Check</span></a>
-            <a href="#fractional" className="btn-secondary hero-cta-secondary">Talk to an Engineer</a>
+          <div style={{ display: 'flex', gap: 'clamp(8px, 1.5vw, 16px)', flexWrap: 'wrap', justifyContent: 'center', marginBottom: 'clamp(16px, 4vh, 64px)' }}>
+            <a href="#show_me" className="btn-primary hero-cta-primary" style={{ padding: 'clamp(10px, 1.5vh, 13px) clamp(16px, 2vw, 24px)', fontSize: 'clamp(11px, 1.4vh, 13px)' }}><span>Run the Reality Check</span></a>
+            <a href="#help_me" className="btn-secondary hero-cta-secondary" style={{ padding: 'clamp(10px, 1.5vh, 13px) clamp(16px, 2vw, 24px)', fontSize: 'clamp(11px, 1.4vh, 13px)' }}>Talk to an Engineer</a>
           </div>
-          <div style={{ fontFamily: '"IBM Plex Mono",monospace', fontSize: 12, letterSpacing: '.18em', textTransform: 'uppercase', color: '#5f6c8c', textAlign: 'center', marginBottom: 24, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12 }}>
+          <div style={{ fontFamily: '"IBM Plex Mono",monospace', fontSize: 'clamp(10px, 1.3vh, 12px)', letterSpacing: '.18em', textTransform: 'uppercase', color: '#5f6c8c', textAlign: 'center', marginBottom: 'clamp(12px, 2.5vh, 24px)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12 }}>
             <span style={{ height: 1, width: 40, background: 'rgba(95,108,140,0.3)' }} />BRANDS THAT TRUST ME<span style={{ height: 1, width: 40, background: 'rgba(95,108,140,0.3)' }} />
           </div>
-          <div className="logo-strip" style={{ marginBottom: 64 }}>
-            <img src="/logos/sapiema.png" alt="Sapiema" title="Sapiema" className="logo-img logo-fix-png" />
-            <img src="/logos/fi.png" alt="Founder Institute" title="Founder Institute" className="logo-img logo-fix-png" />
-            <img src="/logos/twitter-x.png" alt="X / Twitter" title="X / Twitter" className="logo-img logo-fix-png" />
-            <img src="/logos/amazon.png" alt="Amazon" title="Amazon" className="logo-img logo-fix-png" />
-            <img src="/logos/google.png" alt="Google" title="Google" className="logo-img logo-fix-png" />
-            <img src="/logos/sporttotal.png" alt="Sporttotal" title="Sporttotal" className="logo-img logo-fix-png" />
-            <img src="/logos/crossengage.png" alt="CrossEngage" title="CrossEngage" className="logo-img logo-fix-png" />
-            <img src="/logos/sorcova_health.png" alt="Sorcova Health" title="Sorcova Health" className="logo-img logo-fix-png" />
-          </div>
-          <div style={{ borderTop: '1px dashed #243254', paddingTop: 26, display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '12px 40px', fontFamily: '"IBM Plex Mono",monospace', fontSize: 13, color: '#5f6c8c' }}>
-            <span><b>Founder &amp; CEO, Sapiema</b></span><span style={{ color: '#243254' }}>|</span>
-            <span><b>Former AI Infrastructure at Amazon &amp; X (Twitter)</b></span><span style={{ color: '#243254' }}>|</span>
-            <span><b>Fractional CTO &amp; AI Systems Architect</b></span>
-          </div>
-          {/* Terminal */}
-          <div className="sys-module terminal" style={{ margin: '70px auto 0', maxWidth: 860, textAlign: 'left' }}>
-            <div className="hud-corner hud-tl" /><div className="hud-corner hud-tr" /><div className="hud-corner hud-bl" /><div className="hud-corner hud-br" />
-            <div className="terminal-bar">
-              <span className="terminal-dot" /><span className="terminal-dot" /><span className="terminal-dot" />
-              <span className="terminal-path">alex@sapiema:~/ai-strategy$</span>
-              <span className="telemetry-dot" style={{ marginLeft: 'auto' }} />
-            </div>
-            <div className="terminal-body">
-              <span style={{ color: '#f66a2e' }}>$</span> run strategy_audit --mode=reality_check<br />
-              <span style={{ color: '#5f6c8c' }}>[SCAN]</span> checking for buzzwords............... <span style={{ color: '#ff5c5c' }}>14 found. purged.</span><br />
-              <span style={{ color: '#5f6c8c' }}>[SCAN]</span> undefined process chaos.............. <span style={{ color: '#ff5c5c' }}>detected → refuse to automate</span><br />
-              <span style={{ color: '#5f6c8c' }}>[SCAN]</span> data gravity &amp; the 4 V's............. <span style={{ color: '#fafbf7' }}>3 core databases reconciled</span><br />
-              <span style={{ color: '#5f6c8c' }}>[EXEC]</span> PRIME filter + 5-question CTO veto... <span style={{ color: '#fafbf7' }}>11 ideas in → 3 survive</span><br />
-              <span style={{ color: '#5f6c8c' }}>[OUT ]</span> 90-day pilot charters, hard budget caps, named sponsors... <span style={{ color: '#f66a2e', textShadow: '0 0 5px rgba(246,106,46,0.5)' }}>SHIPPED</span> <span className="blink-cursor" />
-            </div>
+          <div className="logo-strip" style={{ marginBottom: 'clamp(16px, 4vh, 64px)', gap: 'clamp(12px, 2vh, 20px) clamp(24px, 4vw, 56px)' }}>
+            <img src="/logos/sapiema.png" alt="Sapiema" title="Sapiema" className="logo-img logo-fix-png" style={{ maxHeight: 'clamp(30px, 5vh, 50px)' }} />
+            <img src="/logos/fi.png" alt="Founder Institute" title="Founder Institute" className="logo-img logo-fix-png" style={{ maxHeight: 'clamp(30px, 5vh, 50px)' }} />
+            <img src="/logos/twitter-x.png" alt="X / Twitter" title="X / Twitter" className="logo-img logo-fix-png" style={{ maxHeight: 'clamp(30px, 5vh, 50px)' }} />
+            <img src="/logos/amazon.png" alt="Amazon" title="Amazon" className="logo-img logo-fix-png" style={{ maxHeight: 'clamp(30px, 5vh, 50px)' }} />
+            <img src="/logos/google.png" alt="Google" title="Google" className="logo-img logo-fix-png" style={{ maxHeight: 'clamp(30px, 5vh, 50px)' }} />
+            <img src="/logos/sporttotal.png" alt="Sporttotal" title="Sporttotal" className="logo-img logo-fix-png" style={{ maxHeight: 'clamp(30px, 5vh, 50px)' }} />
+            <img src="/logos/crossengage.png" alt="CrossEngage" title="CrossEngage" className="logo-img logo-fix-png" style={{ maxHeight: 'clamp(30px, 5vh, 50px)' }} />
+            <img src="/logos/sorcova_health.png" alt="Sorcova Health" title="Sorcova Health" className="logo-img logo-fix-png" style={{ maxHeight: 'clamp(30px, 5vh, 50px)' }} />
           </div>
         </div>
       </section>
       {/* ================= THE COLD HARD MATH ================= */}
-      <section id="math" className="section" style={{ background: 'linear-gradient(to bottom, #050f24, #08142a)' }}>
+      <section id="math" className="section" style={{ background: 'linear-gradient(to bottom, #050f24, #08142a)', position: 'relative', zIndex: 2 }}>
         <div className="section-divider-top" />
         <div className="sys-label">SYS_MODULE // 02_MATH</div>
         <div className="container">
@@ -130,7 +118,7 @@ export default function Home() {
             <div className="pipeline">
               {/* Step 1 */}
               <div>
-                <a href="#workshop" className="pipeline-step active" style={{ textDecoration: 'none', display: 'block' }}>
+                <a href="#show_me" className="pipeline-step active" style={{ textDecoration: 'none', display: 'block' }}>
                   <div className="pipeline-label active" style={{ display: 'flex', justifyContent: 'space-between' }}>
                     <span>STEP 1 · DIAGNOSE</span>
                     <span style={{ background: '#f66a2e', color: '#050f24', padding: '0 4px', borderRadius: 1 }}>[READY]</span>
@@ -142,7 +130,7 @@ export default function Home() {
               <div className="pipeline-connector active" />
               {/* Step 2 */}
               <div>
-                <a href="#fractional" className="pipeline-step pipeline-step-card" style={{ textDecoration: 'none', display: 'block' }}>
+                <a href="#help_me" className="pipeline-step pipeline-step-card" style={{ textDecoration: 'none', display: 'block' }}>
                   <div className="pipeline-label">STEP 2 · GOVERN</div>
                   <div className="pipeline-title">"Help Me"</div>
                   <div className="pipeline-desc">Fractional CTO &amp; specialist advisory</div>
@@ -151,7 +139,7 @@ export default function Home() {
               <div className="pipeline-connector" />
               {/* Step 3 */}
               <div>
-                <a href="#sapiema" className="pipeline-step pipeline-step-card" style={{ textDecoration: 'none', display: 'block' }}>
+                <a href="#do_it_for_me" className="pipeline-step pipeline-step-card" style={{ textDecoration: 'none', display: 'block' }}>
                   <div className="pipeline-label">STEP 3 · SHIP</div>
                   <div className="pipeline-title">"Do It For Me"</div>
                   <div className="pipeline-desc">Sapiema custom build &amp; integration</div>
@@ -161,8 +149,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* ================= THE WORKSHOP ================= */}
-      <section id="workshop" className="section" style={{ background: 'linear-gradient(180deg, #08142a, #050f24)', borderTop: '1px solid #182342' }}>
+      {/* ================= WORKSHOP ================= */}
+      <section id="show_me" className="section" style={{ background: 'linear-gradient(180deg, #08142a, #050f24)', borderTop: '1px solid #182342' }}>
         <div className="sys-label">SYS_MODULE // 03_WORKSHOP</div>
         <div className="container">
           <div className="step-badge">STEP 1 — "SHOW ME"</div>
@@ -192,7 +180,7 @@ export default function Home() {
           <div className="sys-module" style={{ padding: '40px 42px', marginBottom: 24 }}>
             <div className="hud-corner hud-tl" />
             <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'center', flexWrap: 'wrap', gap: 12, marginBottom: 10 }}>
-              <h3 style={{ margin: 0, fontSize: 24, fontWeight: 700, color: '#fafbf7', display: 'flex', alignItems: 'center', gap: 12 }}>Inside the 4 hours <span style={{ fontFamily: '"IBM Plex Mono",monospace', fontSize: 10, fontWeight: 400, color: '#5f6c8c', border: '1px solid #243254', padding: '2px 6px', letterSpacing: '0.1em' }}>BOOT_SEQ_INIT</span></h3>
+              <h3 style={{ margin: 0, fontSize: 24, fontWeight: 700, color: '#fafbf7', display: 'flex', alignItems: 'center', gap: 12 }}>Inside the 4 hours</h3>
               <span style={{ fontFamily: '"IBM Plex Mono",monospace', fontSize: '11.5px', letterSpacing: '0.14em', color: '#f66a2e' }}>7 PHASES · ZERO THEORY-ONLY BLOCKS</span>
             </div>
             <p style={{ margin: '0 auto 30px', textAlign: 'center', fontSize: 15, color: '#9aa5bd', maxWidth: 760 }}>A tightly sequenced working session — each phase produces an artifact the next one builds on.</p>
@@ -281,7 +269,7 @@ export default function Home() {
         </div>
       </section>
       {/* ================= FRACTIONAL CTO ================= */}
-      <section id="fractional" className="section" style={{ background: 'linear-gradient(to bottom, #050f24, #08142a)' }}>
+      <section id="help_me" className="section" style={{ background: 'linear-gradient(to bottom, #050f24, #08142a)' }}>
         <div className="section-divider-top" />
         <div className="sys-label">SYS_MODULE // 04_FRACTIONAL</div>
         <div className="container">
@@ -302,8 +290,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* ================= SAPIEMA ================= */}
-      <section id="sapiema" className="section" style={{ background: 'linear-gradient(to bottom, #08142a, #050f24)' }}>
+      {/* ================= SAPIEMA BUILD ================= */}
+      <section id="do_it_for_me" className="section" style={{ background: 'linear-gradient(to bottom, #08142a, #050f24)' }}>
         <div className="section-divider-top" />
         <div className="sys-label">SYS_MODULE // 05_BUILD</div>
         <div className="container">
@@ -327,19 +315,19 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* ================= BIOGRAPHY ================= */}
-      <section id="about" className="section" style={{ background: 'linear-gradient(to bottom, #050f24, #08142a)' }}>
+      {/* ================= BIO / EXPERIENCE ================= */}
+      <section id="about_me" className="section" style={{ background: 'linear-gradient(to bottom, #050f24, #08142a)' }}>
         <div className="section-divider-top" />
         <div className="sys-label">SYS_MODULE // 06_BIO</div>
         <div className="container">
           <div className="section-label">The Reality Check</div>
           <h2 className="section-title">Designed by an Engineer,<br />Not a Consultant.</h2>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: 34, gap: 40 }}>
-            {/* Photo placeholder */}
+            {/* Headshot */}
             <div className="sys-module" style={{ padding: 16, width: '100%', maxWidth: 380 }}>
               <div className="hud-corner hud-tl" /><div className="hud-corner hud-br" />
-              <div style={{ border: '1px solid #243254', borderRadius: 2, background: 'rgba(5,10,20,0.8)', aspectRatio: '4/5', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden', filter: 'grayscale(1)', backgroundImage: 'linear-gradient(#182342 1px,transparent 1px),linear-gradient(90deg, #182342 1px,transparent 1px)', backgroundSize: '24px 24px' }}>
-                <div style={{ fontFamily: '"IBM Plex Mono",monospace', fontSize: 12, color: '#5f6c8c', textAlign: 'center', lineHeight: 2, padding: 20 }}>[ B&amp;W HEADSHOT ]<br />alex_glontaru.jpg<br />1600 × 2000 · grayscale</div>
+              <div style={{ border: '1px solid #243254', borderRadius: 2, background: 'rgba(5,10,20,0.8)', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
+                <img src="/headshot.png" alt="Alexandru Glontaru" style={{ width: '100%', height: 'auto', display: 'block' }} />
               </div>
             </div>
             {/* Timeline */}
@@ -377,7 +365,7 @@ export default function Home() {
                   <p style={{ fontSize: '14.5px', color: '#9aa5bd', margin: '4px 0 0', maxWidth: 600 }}>Developed Recurrent Neural Network configurations and optimized array databases for satellite deployment.</p>
                 </li>
               </ul>
-              <a href="experience.html" className="btn-secondary" style={{ marginTop: 8 }}>Read My Full Engineering Dossier →</a>
+              <a href="experience" className="btn-secondary" style={{ marginTop: 8 }}>Read My Full Engineering Dossier →</a>
             </div>
           </div>
         </div>
@@ -416,7 +404,7 @@ export default function Home() {
         </div>
       </section>
       {/* ================= FINAL CTA ================= */}
-      <section id="cta" style={{ textAlign: 'center', padding: '130px 0', position: 'relative', background: 'radial-gradient(ellipse 60% 50% at 50% 100%,rgba(246,106,46,.15),transparent)' }}>
+      <section id="cta" style={{ textAlign: 'center', padding: '130px 0', position: 'relative', zIndex: 2, backgroundColor: '#050f24', backgroundImage: 'radial-gradient(ellipse 60% 50% at 50% 100%,rgba(246,106,46,.15),transparent)' }}>
         <div className="section-divider-top" />
         <div className="container">
           <h2 style={{ textAlign: 'center', fontSize: 'clamp(34px,5vw,58px)', fontWeight: 700, letterSpacing: '-0.02em', lineHeight: '1.12', maxWidth: 900, margin: '0 auto 22px' }}>Let's Build a Plan<br />That Outlives the Hype.</h2>
@@ -426,10 +414,11 @@ export default function Home() {
             <span className="cta-step">03 Take the 5-minute friction survey <span style={{ color: '#f66a2e' }}>→</span></span>
             <span className="cta-step">04 Secure your roadmap</span>
           </div>
-          <a href="https://calendar.app.google/DvDV5wZNfq7xbDoM7" className="btn-primary"><span>Schedule Your 30-Minutes Call →</span></a>
+          <a href="https://calendar.app.google/DvDV5wZNfq7xbDoM7" className="btn-primary" target="_blank" rel="noopener noreferrer"><span>Schedule Your 30-Minutes Call →</span></a>
           <div className="cta-contact">
-            <span>✉ <a data-email="alex|sapiema.com">loading...</a></span>
+            <span>✉ <a href="mailto:alex@sapiema.com" style={{ color: '#fafbf7', textDecoration: 'none', borderBottom: '1px dashed #243254', paddingBottom: 2, transition: '0.2s' }}>alex@sapiema.com</a></span>
             <span>☏ <a href="tel:+4917676503499" style={{ color: '#fafbf7', textDecoration: 'none', borderBottom: '1px dashed #243254', paddingBottom: 2, transition: '0.2s' }}>+49 176 76503499</a></span>
+            <span>in <a href="https://www.linkedin.com/in/aglontaru/" target="_blank" rel="noopener noreferrer" style={{ color: '#fafbf7', textDecoration: 'none', borderBottom: '1px dashed #243254', paddingBottom: 2, transition: '0.2s' }}>LinkedIn</a></span>
           </div>
         </div>
       </section>

@@ -72,6 +72,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 67px;
 }
 
 body {
@@ -653,7 +654,7 @@ img { max-width: 100%; display: block; }
 /* ---------- Workshop Phase Grid ---------- */
 .phase-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(7, 1fr);
   gap: 0;
   border: 1px solid var(--border-dashed);
 }
