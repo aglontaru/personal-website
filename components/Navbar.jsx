@@ -36,7 +36,7 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <div className="nav-inner">
-        <Link href={pathname === '/' ? '#home' : '/#home'} className="nav-logo" onClick={closeMenu}>
+        <Link href="/#home" className="nav-logo" onClick={closeMenu}>
           AG<span className="accent">_</span> // <span className="accent">sapiema</span>
         </Link>
         <button
@@ -49,7 +49,7 @@ export default function Navbar() {
         <ul className={`nav-menu ${isOpen ? 'open' : ''}`} id="navMenu">
           <li>
             <Link
-              href={pathname === '/' ? '#show_me' : '/#show_me'}
+              href="/#show_me"
               className={`nav-link ${activeSection === '#show_me' ? 'active' : ''}`}
               onClick={closeMenu}
             >
@@ -58,7 +58,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href={pathname === '/' ? '#help_me' : '/#help_me'}
+              href="/#help_me"
               className={`nav-link ${activeSection === '#help_me' ? 'active' : ''}`}
               onClick={closeMenu}
             >
@@ -67,7 +67,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href={pathname === '/' ? '#do_it_for_me' : '/#do_it_for_me'}
+              href="/#do_it_for_me"
               className={`nav-link ${activeSection === '#do_it_for_me' ? 'active' : ''}`}
               onClick={closeMenu}
             >
@@ -76,7 +76,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href={pathname === '/' ? '#about_me' : '/#about_me'}
+              href="/#about_me"
               className={`nav-link ${(activeSection === '#about_me' && pathname === '/') || pathname === '/experience' ? 'active' : ''}`}
               onClick={closeMenu}
             >
@@ -85,7 +85,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href={pathname === '/' ? '#cta' : '/#cta'}
+              href="/#cta"
               className={`nav-cta ${activeSection === '#cta' ? 'active' : ''}`}
               onClick={closeMenu}
             >

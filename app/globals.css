@@ -78,7 +78,7 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
+  padding-top: 66px;
   background: var(--surface);
   color: var(--text-primary);
   font-family: var(--font-display);
@@ -252,8 +252,9 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Navigation ---------- */
 .nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 50;
   background: rgba(5,15,36,0.88);
   backdrop-filter: blur(12px);

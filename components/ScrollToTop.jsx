@@ -33,6 +33,9 @@ export default function ScrollToTop() {
       top: 0,
       behavior: 'smooth'
     });
+    // Remove the hash from the URL without reloading the page.
+    // We use replaceState with the existing history state to avoid Next.js App Router TypeErrors.
+    window.history.replaceState(window.history.state, '', window.location.pathname + window.location.search);
   };
 
   return (
