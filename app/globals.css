@@ -73,6 +73,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 67px;
+  overflow-x: hidden;
 }
 
 body {
@@ -84,6 +85,7 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -493,12 +495,40 @@ img { max-width: 100%; display: block; }
   color: var(--text-dim);
   border: 1px solid var(--border-dashed);
   display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
   align-items: center;
   gap: 10px;
   padding: 7px 14px;
   border-radius: var(--radius-sm);
   background: rgba(7,16,35,0.8);
-  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.title-stack {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .status-badge {
+    flex-direction: column !important;
+    padding: 16px 24px !important;
+    gap: 12px !important;
+  }
+  .status-separator, .dot-sep {
+    display: none !important;
+  }
+  .title-stack {
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 4px;
+  }
 }
 
 /* ---------- Terminal Block ---------- */
@@ -1363,7 +1393,18 @@ img { max-width: 100%; display: block; }
   }
 
   .phase-grid {
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: none;
+    gap: 16px;
+  }
+  
+  .phase-cell {
+    flex: 1 1 130px;
+    max-width: 180px;
+    border: 1px solid var(--border-dashed) !important;
+    border-radius: var(--radius-sm);
   }
 }
 

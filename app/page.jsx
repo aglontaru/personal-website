@@ -9,25 +9,37 @@ export default function Home() {
         {/* <div className="sys-label">SYSTEM_LOG // 01_HERO</div> */}
         <div className="container" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: 'auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 'clamp(10px, 2vh, 34px)' }}>
-            <div className="status-badge" style={{ padding: 'clamp(4px, 1vh, 7px) clamp(8px, 1.5vw, 14px)', fontSize: 'clamp(10px, 1.2vh, 12px)' }}>
-              <span className="pulse-dot" /><b style={{ color: '#f66a2e', fontWeight: 600 }}>ALEXANDRU GLONTARU</b> — AI ENGINEER · FRACTIONAL CTO · FOUNDER &amp; CEO, <b style={{ color: '#f66a2e', fontWeight: 600 }}>SAPIEMA</b>
+            <div className="status-badge" style={{ padding: 'clamp(8px, 1.5vh, 12px) clamp(12px, 2vw, 20px)', fontSize: 'clamp(10px, 1.2vh, 12px)' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <span className="pulse-dot" />
+                <b style={{ color: '#f66a2e', fontWeight: 600 }}>ALEXANDRU GLONTARU</b>
+              </div>
+              <span className="status-separator" style={{ color: '#5f6c8c' }}>—</span>
+              <div className="title-stack">
+                <span>AI ENGINEER</span>
+                <span className="dot-sep" style={{ color: '#5f6c8c' }}>·</span>
+                <span>FRACTIONAL CTO</span>
+                <span className="dot-sep" style={{ color: '#5f6c8c' }}>·</span>
+                <span>FOUNDER &amp; CEO</span>
+                <b style={{ color: '#f66a2e', fontWeight: 600 }}>SAPIEMA</b>
+              </div>
             </div>
           </div>
           <h1 style={{ margin: '0 auto', textAlign: 'center', fontSize: 'clamp(32px, min(6vw, 7vh), 86px)', fontWeight: 700, lineHeight: '1.02', letterSpacing: '-0.03em', maxWidth: 980 }}>Stop <span style={{ color: '#5f6c8c', textDecoration: 'line-through 4px #ff5c5c' }}>Hallucinating</span> Your AI Strategy.<br /><span style={{ color: '#f66a2e' }}>Start Engineering It.</span></h1>
-          <div style={{ margin: 'clamp(12px, 3vh, 36px) auto clamp(16px, 4vh, 48px)', textAlign: 'center', maxWidth: 1040, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 'clamp(12px, 2vh, 32px)' }}>
-            <div style={{ background: 'rgba(7,16,35,0.4)', border: '1px solid rgba(36,50,84,0.4)', borderRadius: 8, padding: 'clamp(12px, 2vh, 24px)', backdropFilter: 'blur(10px)' }}>
+          <div style={{ margin: 'clamp(12px, 3vh, 36px) auto clamp(16px, 4vh, 48px)', textAlign: 'center', maxWidth: 1040, display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 'clamp(12px, 2vh, 32px)' }}>
+            <div style={{ flex: '1 1 300px', maxWidth: 400, background: 'rgba(7,16,35,0.4)', border: '1px solid rgba(36,50,84,0.4)', borderRadius: 8, padding: 'clamp(12px, 2vh, 24px)', backdropFilter: 'blur(10px)' }}>
               <p style={{ fontSize: 'clamp(12px,min(1.4vw, 1.6vh),17px)', color: '#9aa5bd', lineHeight: '1.5', margin: 0 }}>
                 <span style={{ color: '#f66a2e', fontFamily: '"IBM Plex Mono",monospace', fontSize: 'clamp(11px, 1.4vh, 13px)', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: 'clamp(4px, 1vh, 8px)' }}>The Reality</span>
                 80% of corporate AI projects fail inside sandbox playgrounds.
               </p>
             </div>
-            <div style={{ background: 'rgba(7,16,35,0.4)', border: '1px solid rgba(36,50,84,0.4)', borderRadius: 8, padding: 'clamp(12px, 2vh, 24px)', backdropFilter: 'blur(10px)' }}>
+            <div style={{ flex: '1 1 300px', maxWidth: 400, background: 'rgba(7,16,35,0.4)', border: '1px solid rgba(36,50,84,0.4)', borderRadius: 8, padding: 'clamp(12px, 2vh, 24px)', backdropFilter: 'blur(10px)' }}>
               <p style={{ fontSize: 'clamp(12px,min(1.4vw, 1.6vh),17px)', color: '#9aa5bd', lineHeight: '1.5', margin: 0 }}>
                 <span style={{ color: '#f66a2e', fontFamily: '"IBM Plex Mono",monospace', fontSize: 'clamp(11px, 1.4vh, 13px)', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: 'clamp(4px, 1vh, 8px)' }}>The Stance</span>
                 Zero hype. Just hard software physics enforced by a Fractional CTO.
               </p>
             </div>
-            <div style={{ background: 'rgba(7,16,35,0.4)', border: '1px solid rgba(36,50,84,0.4)', borderRadius: 8, padding: 'clamp(12px, 2vh, 24px)', backdropFilter: 'blur(10px)' }}>
+            <div style={{ flex: '1 1 300px', maxWidth: 400, background: 'rgba(7,16,35,0.4)', border: '1px solid rgba(36,50,84,0.4)', borderRadius: 8, padding: 'clamp(12px, 2vh, 24px)', backdropFilter: 'blur(10px)' }}>
               <p style={{ fontSize: 'clamp(12px,min(1.4vw, 1.6vh),17px)', color: '#9aa5bd', lineHeight: '1.5', margin: 0 }}>
                 <span style={{ color: '#f66a2e', fontFamily: '"IBM Plex Mono",monospace', fontSize: 'clamp(11px, 1.4vh, 13px)', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: 'clamp(4px, 1vh, 8px)' }}>The 4-Hour Payoff</span>
                 A forensic workflow audit locking down 2–3 shippable, 90-day pilot charters.
@@ -158,19 +170,19 @@ export default function Home() {
           <p className="section-subtitle">A 4-Hour Anti-Failure Engine for Your Executive Team.</p>
           <p style={{ fontSize: '17.5px', color: '#9aa5bd', maxWidth: 800, margin: '22px auto 54px', textAlign: 'center' }}>A highly structured, fast-paced, remote-first session designed to <b style={{ color: '#fafbf7' }}>veto unbuildable ideas</b>, isolate your most valuable unused data, and spec out <b style={{ color: '#fafbf7' }}>2 to 3 launch-ready pilots</b> with fixed 90-day caps.</p>
           {/* Before / During / After */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 20, marginBottom: 60 }}>
-            <div className="sys-module" style={{ padding: 28 }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 20, marginBottom: 60 }}>
+            <div className="sys-module" style={{ flex: '1 1 280px', maxWidth: 400, padding: 28 }}>
               <div style={{ fontFamily: '"IBM Plex Mono",monospace', fontSize: 11, color: '#5f6c8c', letterSpacing: '0.16em', marginBottom: 12, display: 'flex', alignItems: 'center', gap: 8 }}><span style={{ width: 4, height: 4, background: '#5f6c8c', borderRadius: '50%' }} />BEFORE — CALIBRATION</div>
               <h3 style={{ margin: '0 0 8px', fontSize: 17, fontWeight: 600, color: '#fafbf7' }}>Company-wide friction survey</h3>
               <p style={{ margin: 0, fontSize: 14, color: '#9aa5bd' }}>A 5-minute survey maps adoption, AI fluency, biggest issues, and organisational readiness — so the session starts calibrated, <b style={{ color: '#fafbf7', fontWeight: 600 }}>not cold</b>.</p>
             </div>
-            <div className="sys-module" style={{ padding: 28, borderColor: 'rgba(246,106,46,0.5)', boxShadow: 'inset 0 0 20px rgba(246,106,46,0.05)' }}>
+            <div className="sys-module" style={{ flex: '1 1 280px', maxWidth: 400, padding: 28, borderColor: 'rgba(246,106,46,0.5)', boxShadow: 'inset 0 0 20px rgba(246,106,46,0.05)' }}>
               <div className="hud-corner hud-tl" /><div className="hud-corner hud-br" />
               <div style={{ fontFamily: '"IBM Plex Mono",monospace', fontSize: 11, color: '#f66a2e', letterSpacing: '0.16em', marginBottom: 12, display: 'flex', alignItems: 'center', gap: 8 }}><span style={{ width: 4, height: 4, background: '#f66a2e', borderRadius: '50%', boxShadow: '0 0 5px #f66a2e' }} />THE SESSION — 4 HOURS</div>
               <h3 style={{ margin: '0 0 8px', fontSize: 17, fontWeight: 600, color: '#fafbf7' }}>Hands-on. Not a lecture.</h3>
               <p style={{ margin: 0, fontSize: 14, color: '#9aa5bd' }}>Your executive team works through <b style={{ color: '#fafbf7', fontWeight: 600 }}>divergent brainstorming and execution planning</b> — on a live board, not slides. Remote-first, fast-paced.</p>
             </div>
-            <div className="sys-module" style={{ padding: 28 }}>
+            <div className="sys-module" style={{ flex: '1 1 280px', maxWidth: 400, padding: 28 }}>
               <div style={{ fontFamily: '"IBM Plex Mono",monospace', fontSize: 11, color: '#5f6c8c', letterSpacing: '0.16em', marginBottom: 12, display: 'flex', alignItems: 'center', gap: 8 }}><span style={{ width: 4, height: 4, background: '#5f6c8c', borderRadius: '50%' }} />AFTER — WITHIN 1 WEEK</div>
               <h3 style={{ margin: '0 0 8px', fontSize: 17, fontWeight: 600, color: '#fafbf7' }}>Blueprint + leadership debrief</h3>
               <p style={{ margin: 0, fontSize: 14, color: '#9aa5bd' }}>Your <b style={{ color: '#fafbf7', fontWeight: 600 }}>AI Integration Blueprint</b> lands within a week — closed out with a 1-hour leadership debrief and alignment session.</p>

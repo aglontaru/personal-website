@@ -241,7 +241,7 @@ export default function Experience() {
           <div className="section-label">Deep Storage — Research Record</div>
           <h2 className="section-title">Before production systems:<br />first principles, in the lab.</h2>
           <p className="section-subtitle">Research at Jacobs University Bremen — where the habit of understanding models from the mathematics up was formed.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginTop: 48 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))', gap: 20, marginTop: 48 }}>
             <div className="research-card">
               <div className="hud-corner hud-tl" />
               <div className="research-label">MINDS Research Group</div>
@@ -278,7 +278,7 @@ export default function Experience() {
         <div className="container">
           <div className="section-label">Foundational Layers</div>
           <h2 className="section-title">The paper trail.</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginTop: 48 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))', gap: 20, marginTop: 48 }}>
             <div className="edu-card">
               <div className="hud-corner hud-tl" />
               <h3 className="edu-card-title">Education</h3>
@@ -306,7 +306,7 @@ export default function Experience() {
         <div className="container">
           <div className="section-label">System Loadout</div>
           <h2 className="section-title">Skills, and where each one was earned.</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginTop: 48 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))', gap: 20, marginTop: 48 }}>
             <div className="skill-module">
               <div className="skill-module-id">MOD_01</div>
               <h3 style={{ margin: '0 auto 6px', textAlign: 'center', fontSize: 16, fontWeight: 600, fontFamily: '"IBM Plex Mono",monospace' }}>Machine Learning &amp; AI Engineering</h3>

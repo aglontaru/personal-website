@@ -1,8 +1,16 @@
 'use client';
 import { useState, useEffect } from 'react';
 
+import { usePathname } from 'next/navigation';
+
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    // Force instant scroll to top on route change to override smooth scrolling glitches
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }, [pathname]);
 
   useEffect(() => {
     const toggleVisibility = () => {
@@ -34,7 +42,7 @@ export default function ScrollToTop() {
         position: 'fixed',
         bottom: '30px',
         right: '30px',
-        zIndex: 9999,
+        zIndex: 2147483647,
         background: 'rgba(246,106,46,0.15)',
         color: '#f66a2e',
         border: '1px solid rgba(246,106,46,0.5)',

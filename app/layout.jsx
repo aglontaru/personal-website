@@ -33,9 +33,15 @@ export const metadata = {
   }
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${ibmPlexMono.variable}`} style={{ scrollBehavior: 'smooth' }}>
+    <html lang="en" suppressHydrationWarning className={`${spaceGrotesk.variable} ${ibmPlexMono.variable}`} style={{ scrollBehavior: 'smooth' }}>
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
         <style>{`
@@ -58,7 +64,7 @@ export default function RootLayout({ children }) {
           .footer a:hover { color: #f66a2e; }
         `}</style>
       </head>
-      <body>
+      <body suppressHydrationWarning>
         <Navbar />
         {children}
         <Footer />
