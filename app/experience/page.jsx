@@ -378,7 +378,7 @@ export default function Experience() {
           <p style={{ textAlign: 'center', color: '#9aa5bd', maxWidth: 640, margin: '0 auto 40px', fontSize: 17 }}>Every framework in the AI Integration Workshop — the PRIME Filter, the CTO Veto, the pre-mortems — was paid for in production incidents, failed pivots, and systems that had to keep running. That's the point.</p>
           <a href="https://calendar.app.google/DvDV5wZNfq7xbDoM7" className="btn-primary" target="_blank" rel="noopener noreferrer"><span>Schedule Your 30-Minutes Call →</span></a>
           <div className="cta-contact">
-            <span>✉ <a href="mailto:alex@sapiema.com" style={{ color: '#fafbf7', textDecoration: 'none', borderBottom: '1px dashed #243254', paddingBottom: 2, transition: '0.2s' }}>alex@sapiema.com</a></span>
+            <span>✉ <a href="mailto:aglontaru@sapiema.com" style={{ color: '#fafbf7', textDecoration: 'none', borderBottom: '1px dashed #243254', paddingBottom: 2, transition: '0.2s' }}>aglontaru@sapiema.com</a></span>
             <span>☏ <a href="tel:+4917676503499" style={{ color: '#fafbf7', textDecoration: 'none', borderBottom: '1px dashed #243254', paddingBottom: 2, transition: '0.2s' }}>+49 176 76503499</a></span>
             <span>in <a href="https://www.linkedin.com/in/aglontaru/" target="_blank" rel="noopener noreferrer" style={{ color: '#fafbf7', textDecoration: 'none', borderBottom: '1px dashed #243254', paddingBottom: 2, transition: '0.2s' }}>LinkedIn</a></span>
           </div>
